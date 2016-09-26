@@ -224,8 +224,8 @@ textarea {
   height: 3.625rem;
 }
 .sign-form li {
+  box-sizing: border-box;
   margin-bottom: 1.375rem;
-  overflow: hidden;
   position: relative;
 }
 .sign-form li .code-btn {
@@ -266,8 +266,9 @@ textarea {
   color: #999999;
   font-size: 1.083333rem;
   background-color: #f8f8f8;
+  overflow: hidden;
 }
-.warn:before {
+.warn p:before {
   content: "";
   display: inline-block;
   width: 1.416667rem;
@@ -278,6 +279,24 @@ textarea {
   top: 0.1rem;
   -webkit-background-size: 100% 100%;
   background-size: 100% 100%;
+}
+.warn h3 {
+  font-size: 1.083333rem;
+  color: #666666;
+  font-weight: normal;
+  margin-top: 1.25rem;
+  line-height: 1.666667rem;
+}
+.warn h3 span {
+  margin-left: 0.916667rem;
+  color: #999999;
+}
+.warn.warn2 {
+  display: block;
+  text-align: center;
+}
+.warn.warn2 p {
+  font-size: 0.875rem;
 }
 .withdraw-form {
   padding-top: 0.75rem;
@@ -349,7 +368,7 @@ textarea {
   margin-left: auto;
   border-radius: 0.208333rem;
   height: 1.333333rem;
-  line-height: 1.5rem;
+  line-height: 1.4rem;
 }
 .vip-con-table {
   overflow: hidden;
@@ -376,6 +395,8 @@ textarea {
   overflow: hidden;
 }
 .vip-con-list {
+  width: 26.666667rem;
+  margin: 0 auto;
   overflow: hidden;
 }
 .vip-con-list dt {
@@ -441,4 +462,146 @@ textarea {
 .vip-con-list-two dd,
 .vip-con-list-three dd {
   display: none;
+}
+.withdraw-list li {
+  height: 4.166667rem;
+  line-height: 4.166667rem;
+  border-bottom: 1px solid #ececec;
+}
+.withdraw-list li span {
+  float: left;
+  text-align: center;
+  width: 33.3%;
+  font-size: 1.083333rem;
+  color: #999999;
+}
+.withdraw-list li span.withdraw-yes {
+  color: #d50e0e;
+}
+.withdraw-money {
+  text-align: center;
+  margin-top: 0.625rem;
+  padding-bottom: 3rem;
+}
+.withdraw-money dt {
+  color: #666666;
+}
+.withdraw-money dt strong {
+  font-weight: normal;
+  font-size: 1.083333rem;
+  display: block;
+  width: 100%;
+}
+.withdraw-money dt strong span {
+  color: #d50e0e;
+}
+.withdraw-money dt p {
+  color: #666666;
+  font-size: 0.875rem;
+  line-height: 1.666667rem;
+}
+.withdraw-money dd a {
+  display: block;
+  background-color: #d50e0e;
+  width: 6.75rem;
+  height: 2.166667rem;
+  line-height: 2.166667rem;
+  color: #fff;
+  margin: 0 auto;
+  font-size: 1.083333rem;
+  margin-top: 0.416667rem;
+  border-radius: 0.208333rem;
+}
+.this-winpop {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 14.625rem;
+  height: 8.875rem;
+  margin: -4.4375rem 0 0 -7.3125rem;
+  background-color: #f8f8f8;
+  border: 0.083333rem solid #efefef;
+  border-radius: 0.208333rem;
+  text-align: center;
+}
+.this-winpop .winpop-txt {
+  width: 8.75rem;
+  margin: 0.625rem auto;
+  line-height: 2.083333rem;
+  font-size: 1.083333rem;
+  color: #666666;
+}
+.this-winpop .winpop-btn {
+  display: inline-block;
+  padding: 0.2rem 0.833333rem;
+  color: #fff;
+  background-color: #d50e0e;
+  margin-top: 0.416667rem;
+}
+.this-winpop .winpop-btn-gray {
+  background-color: #a8a8a8;
+  margin-left: 0.5rem;
+}
+.this-winpop .winpop-input {
+  padding: 0.7rem 1.458333rem 0.5rem;
+}
+.this-winpop .winpop-input dt {
+  color: #666666;
+  font-size: 1.083333rem;
+  line-height: 2.5rem;
+  text-align: left;
+}
+.this-winpop .winpop-input dd input {
+  width: 100%;
+  background-color: #e5e5e5;
+  border: none;
+  height: 2.0rem;
+  line-height: 2.0rem;
+}
+.asset-header {
+  padding: 1.875rem 1.25rem;
+  overflow: hidden;
+  background-color: #f8f8f8;
+  line-height: 1.666667rem;
+}
+.asset-header dt {
+  width: 50%;
+  float: left;
+  color: #333333;
+  font-size: 1.291667rem;
+}
+.asset-header dt span {
+  font-size: 0.875rem;
+}
+.asset-header dd {
+  float: left;
+  width: 50%;
+  font-size: 1.083333rem;
+  color: #666666;
+}
+.asset-list {
+  overflow: hidden;
+}
+.asset-list li {
+  padding: 0.7rem 1.25rem 0.5rem;
+  border-bottom: 1px solid #eeeeee;
+}
+.asset-list dt h2 {
+  color: #333333;
+  font-size: 1.083333rem;
+  font-weight: normal;
+  width: 100%;
+}
+.asset-list dt h2 span {
+  color: #999999;
+  float: right;
+}
+.asset-list dd {
+  line-height: 2.5rem;
+}
+.asset-list dd span {
+  font-size: 0.916667rem;
+  color: #666666;
+  display: inline-block;
+  margin-right: 0.916667rem;
 }

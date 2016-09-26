@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0, width=device-width" />
+    <meta name="format-detection" content="telephone=no">
+    <meta name="renderer" content="webkit">
+    <!--[if !IE]>
+    		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    	<!--<![endif]-->
+    <title>会员系统</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <script src="js/fontrem.js" type="text/javascript" charset="utf-8"></script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="this-tit">申请提现</div>
+        <div class="warn warn2">
+            <h3>您绑定的银行卡号<span>6222245786****1234</span></h3>
+            <p>每周可以提出一次提现申请，提现收取1%手续费用</p>
+        </div>
+        <div class="withdraw-list">
+            <ul>
+                <li>
+                    <span>2016-9-21</span>
+                    <span>金币：12547</span>
+                    <span>不能提现</span>
+                </li>
+                <li>
+                    <span>2016-9-21</span>
+                    <span>金币：12547</span>
+                    <span>不能提现</span>
+                </li>
+                <li>
+                    <span>2016-9-21</span>
+                    <span>金币：12547</span>
+                    <span class="withdraw-yes">可以提现</span>
+                </li>
+                <li>
+                    <span>2016-9-21</span>
+                    <span>金币：12547</span>
+                    <span class="withdraw-yes">可以提现</span>
+                </li>
+                <li>
+                    <span>2016-9-21</span>
+                    <span>金币：12547</span>
+                    <span>不能提现</span>
+                </li>
+            </ul>
+        </div>
+        <div class="withdraw-money">
+            <dl>
+                <dt>
+                    <strong>您可提取金币：<span>5690</span></strong>
+                    <p>本次手续费用20金币</p>
+                </dt>
+                <dd>
+                    <a href="#">全部提取</a>
+                </dd>
+            </dl>
+        </div>
+        <div class="this-winpop">
+            <div class="winpop-txt">提现请求以发送给管理员审核</div>
+            <a href="#" class="winpop-btn">确定</a>
+        </div>
+        <div class="this-winpop">
+            <div class="winpop-input">
+                <dl>
+                    <dt>请输入提现密码</dt>
+                    <dd><input type="text"></dd>
+                </dl>
+            </div>
+            <a href="#" class="winpop-btn">确定</a>
+            <a href="#" class="winpop-btn winpop-btn-gray">取消</a>
+        </div>
+    </div>
+    <script src="http://cdn.bootcss.com/fastclick/1.0.6/fastclick.min.js"></script>
+    <script src="http://cdn.bootcss.com/zepto/1.2.0/zepto.min.js"></script>
+    <script type="text/javascript">
+        $(function(){
+            $(function() {
+              FastClick.attach(document.body);
+            });
+            $('.winpop-btn').on("click",function(){
+                $(this).parents(".this-winpop").hide();
+            });
+        });
+    </script>
+</body>
+
+</html>

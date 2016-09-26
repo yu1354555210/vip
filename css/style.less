@@ -231,8 +231,8 @@ textarea {
 
 .sign-form {
     li {
+        box-sizing: border-box;
         margin-bottom: 1.375rem;
-        overflow: hidden;
         position: relative;
         .code-btn {
             display: block;
@@ -270,7 +270,8 @@ textarea {
     color: #999999;
     font-size: 1.083333rem;
     background-color: #f8f8f8;
-    &:before {
+    overflow: hidden;
+    p:before {
         content: "";
         display: inline-block;
         width: 1.416667rem;
@@ -280,6 +281,24 @@ textarea {
         left: -1rem;
         top: 0.1rem;
         .bgSize;
+    }
+    h3{
+        font-size: 1.083333rem;
+        color: #666666;
+        font-weight: normal;
+        margin-top: 1.25rem;
+        line-height: 1.666667rem;
+        span{
+            margin-left: 0.916667rem;
+            color: #999999;
+        }
+    }
+    &.warn2{
+        display: block;
+        text-align: center;
+        p{
+            font-size: 0.875rem;
+        }
     }
 }
 
@@ -352,7 +371,7 @@ textarea {
             margin-left: auto;
             border-radius: 0.208333rem;
             height: 1.333333rem;
-            line-height: 1.5rem;
+            line-height: 1.4rem;
         }
     }
 }
@@ -384,6 +403,8 @@ textarea {
 }
 
 .vip-con-list {
+    width: 26.666667rem;
+    margin: 0 auto;
     overflow: hidden;
     dt {
         height: 3.541667rem;
@@ -442,5 +463,155 @@ textarea {
 .vip-con-list-two,.vip-con-list-three{
     dd{
         display: none;
+    }
+}
+.withdraw-list{
+    li{
+        height: 4.166667rem;
+        line-height: 4.166667rem;
+        border-bottom: 1px solid #ececec;
+        span{
+            .fl;
+            text-align: center;
+            width: 33.3%;
+            font-size: 1.083333rem;
+            color: #999999;
+            &.withdraw-yes{
+                color: @red;
+            }
+        }
+    }
+}
+.withdraw-money{
+    text-align: center;
+    margin-top: 0.625rem;
+    padding-bottom: 3rem;
+    dt{
+        color: #666666;
+        strong{
+            font-weight: normal;
+            font-size: 1.083333rem;
+            display: block;
+            width: 100%;
+            span{
+                color: @red;
+            }
+        }
+        p{
+            color: #666666;
+            font-size: 0.875rem;
+            line-height: 1.666667rem;
+        }
+    }
+    dd{
+        a{
+            display: block;
+            background-color: @red;
+            width: 6.75rem;
+            height: 2.166667rem;
+            line-height: 2.166667rem;
+            color: #fff;
+            margin: 0 auto;
+            font-size: 1.083333rem;
+            margin-top: 0.416667rem;
+            border-radius: 0.208333rem;
+        }
+    }
+}
+.this-winpop{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 14.625rem;
+    height: 8.875rem;
+    margin: -8.875rem/2 0 0 -14.625rem/2;
+    background-color: #f8f8f8;
+    border: 0.083333rem solid #efefef;
+    border-radius: 0.208333rem;
+    text-align: center;
+    .winpop-txt{
+        width: 8.75rem;
+        margin: 0.625rem auto;
+        line-height: 2.083333rem;
+        font-size: 1.083333rem;
+        color: #666666;
+    }
+    .winpop-btn{
+        display: inline-block;
+        padding: 0.2rem 0.833333rem;
+        color: #fff;
+        background-color: @red;
+        margin-top: 0.416667rem;
+    }
+    .winpop-btn-gray{
+        background-color: #a8a8a8;
+        margin-left: 0.5rem;
+    }
+    .winpop-input{
+        padding: 0.7rem 1.458333rem 0.5rem;
+        dt{
+            color: #666666;
+            font-size: 1.083333rem;
+            line-height: 2.5rem;
+            text-align: left;
+        }
+        dd{
+            input{
+                width: 100%;
+                background-color: #e5e5e5;
+                border: none;
+                height: 2.0rem;
+                line-height: 2.0rem;
+            }
+        }
+    }
+}
+.asset-header{
+    padding: 1.875rem 1.25rem;
+    overflow: hidden;
+    background-color: #f8f8f8;
+    line-height: 1.666667rem;
+    dt{
+        width: 50%;
+        .fl;
+        color: #333333;
+        font-size: 1.291667rem;
+        span{
+            font-size: 0.875rem;
+        }
+    }
+    dd{
+        .fl;
+        width: 50%;
+        font-size: 1.083333rem;
+        color: #666666;
+    }
+}
+.asset-list{
+    overflow: hidden;
+    li{
+        padding: 0.7rem 1.25rem 0.5rem;
+        border-bottom: 1px solid #eeeeee;
+    }
+    dt{
+        h2{
+            color: #333333;
+            font-size: 1.083333rem;
+            font-weight: normal;
+            width: 100%;
+            span{
+                color: #999999;
+                .fr;
+            }
+        }
+    }
+    dd{
+        line-height: 2.5rem;
+        span{
+            font-size: 0.916667rem;        
+            color: #666666;
+            display: inline-block;
+            margin-right: 0.916667rem;
+        }
     }
 }
