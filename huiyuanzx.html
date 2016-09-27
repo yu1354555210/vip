@@ -167,9 +167,7 @@
     <script src="http://cdn.bootcss.com/zepto/1.2.0/zepto.min.js"></script>
     <script type="text/javascript">
     	$(function(){
-    		$(function() {
-			  FastClick.attach(document.body);
-			});
+			FastClick.attach(document.body);
     		$('.vip-con-list-tit').on("click",function(){
     			var $this = $(this);
     				$this.toggleClass("active").siblings("dd").toggle();
@@ -179,3 +177,4 @@
 </body>
 
 </html>
+
