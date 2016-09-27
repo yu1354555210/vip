@@ -221,7 +221,26 @@ textarea {
   color: #ffffff;
   font-size: 1.291667rem;
   width: 100%;
+  position: relative;
   height: 3.625rem;
+}
+.this-tit .back {
+  position: absolute;
+  width: 3.625rem;
+  height: 3.625rem;
+  display: block;
+}
+.this-tit .back i {
+  width: 1.5rem;
+  height: 1.5rem;
+  position: absolute;
+  display: block;
+  top: 50%;
+  left: 0.5rem;
+  margin-top: -0.75rem;
+  background-image: url(../img/back.png);
+  -webkit-background-size: 100% 100%;
+  background-size: 100% 100%;
 }
 .sign-form li {
   box-sizing: border-box;
