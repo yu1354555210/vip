@@ -624,3 +624,34 @@ textarea {
   display: inline-block;
   margin-right: 0.916667rem;
 }
+.yd_box {
+  height: 47.416667rem;
+  position: relative;
+}
+.yd_box .yd_btn {
+  width: 10.166667rem;
+  height: 3.0rem;
+  line-height: 3.0rem;
+  text-align: center;
+  color: #fff;
+  background-color: #ff0010;
+  font-size: 1.5rem;
+  position: absolute;
+  bottom: 7.916667rem;
+  left: 50%;
+  margin-left: -5.0833335rem;
+  border-radius: 0.416667rem;
+}
+.yd_box .swiper-pagination {
+  bottom: 3.333333rem !important;
+}
+.yd_box .swiper-pagination .swiper-pagination-bullet {
+  width: 1.05rem;
+  height: 1.05rem;
+  background-color: #ffffff;
+  opacity: 1;
+  margin: 0 0.416667rem !important;
+}
+.yd_box .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background-color: #e6a619;
+}
